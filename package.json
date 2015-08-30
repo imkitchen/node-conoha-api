@@ -4,7 +4,7 @@
   "description": "ConoHa API client for node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "keywords": [
     "API",
@@ -20,7 +20,10 @@
     "request": "^2.61.0"
   },
   "devDependencies": {
+    "chai": "^3.2.0",
+    "coffee-script": "^1.9.3",
     "gulp": "^3.9.0",
-    "gulp-coffee": "^2.3.1"
+    "gulp-coffee": "^2.3.1",
+    "gulp-mocha": "^2.1.3"
   }
 }
