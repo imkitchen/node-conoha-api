@@ -1,0 +1,11 @@
+module.exports =
+  IdentityService:        require './identity'
+  AccountService:         require './account'
+  ComputeService:         require './compute'
+  BlockStorageService:    require './block_storage'
+  ImageService:           require './image'
+  NetworkService:         require './network'
+  ObjectStorageService:   require './object_storage'
+  DatabaseHostingService: require './database_hosting'
+  DNSService:             require './dns'
+  MailHostingService:     require './mail_hosting'
