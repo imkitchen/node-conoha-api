@@ -1,5 +1,5 @@
 chai = require 'chai'
 
-dscribe 'mocha', ->
+describe 'mocha', ->
   it 'mocha works', ->
     true
