@@ -1,0 +1,26 @@
+{
+  "name": "conoha-api",
+  "version": "0.0.0",
+  "description": "ConoHa API client for node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "API",
+    "ConoHa"
+  ],
+  "author": "imkitchen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imkitchen/node-conoha-api.git"
+  },
+  "dependencies": {
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1"
+  }
+}
