@@ -4,6 +4,10 @@ node_js:
 - '0.10'
 notifications:
   email: false
+  on_success: always
+  on_failure: always
+  on_start: always
+  webhooks: 'http://v133-130-97-190.a026.g.tyo1.static.cnode.io/travisci/hooks'
 env:
   global:
   - secure: X3hh/zdSPz/l+vi8LWVRWw56ECy3w3EnDSiNiGhTOD7pU5Nyt6bTMhkpochZ7nMJ6YFcQQuycmBybIPyM9VvumtpZknUKGXjiCXzFE0VQogoxe7O3EGBklDT1abFN0cksfL+lmYAh9Zrc/FbLmxze7jd0oDpIltPjhy3jAgKhtbVRLyPyxnZTqeDbJxaHayjxD7dYknOulLAN2Tbdq+iVinAayPwf8Ea3RE7JvFeD7JQ1RUVPE4SHqzLu46ikV68p3K4Lf5Pygza/nZ5wI4K03U7+rwQtWjx4rZUL32UiVurzM8RneSletrGFzZOWdAXd/OkQoSg6x8XsrkymRYTlyutTsSsFnL7cJ8Ir5LwmK9xFU3i4BHRPJd2hMrxNR+YZWB5mo7PiUSowvGh3+tzt7B9W48XwNPWPxfAWh/hizDCsQreCg4kRGMG42Y7bShrrsCjTyyil/KTpsBdNHR4MEyFsECFiMjx8T01eY+rQnHrp5B6yrzJYz30sbNw1sONViW9Irkgok4NVfckDoUD3xx70HAp1i49hNsU3HQ/BduVeqj1uj9ZUIZHBQwM9masPqEXHSfEiAQX9XfbPXRkWo1r/GTCzcF7+pLSUhEYjSUI3lLZZAZsoat2+F3PZjhsAEFifL1t8ZN1MeaA5Nr8BSvaKwE7veQIR3fZQtNtDQA=
