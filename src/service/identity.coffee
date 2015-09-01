@@ -31,7 +31,6 @@ module.exports = class IdentityService
       headers: { 'Accept': 'application/json' }
       form: JSON.stringify { auth: @conoha.auth }
       (err, res, body) ->
-        console.log body
         token = JSON.parse(body).access.token
         #TODO: cache to DB
         conoha.token = new AccessToken(token.id, token.expires)
