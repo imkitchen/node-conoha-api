@@ -1,3 +1,5 @@
+AccessToken = require '../access_token'
+
 module.exports = class IdentityService
 
   constructor: (@conoha) ->
@@ -22,13 +24,15 @@ module.exports = class IdentityService
         callback(err, version)
 
   # https://www.conoha.jp/docs/identity-post_tokens.html
-  ###
-  postTokens: (cache, callback) ->
+  postTokens: (callback) ->
+    conoha = @conoha
     @conoha.request.post
       url: @endpoint+'/v2.0/tokens'
       headers: { 'Accept': 'application/json' }
+      form: JSON.stringify { auth: @conoha.auth }
       (err, res, body) ->
-        token = JSON.parse(body).access?.token
+        console.log body
+        token = JSON.parse(body).access.token
         #TODO: cache to DB
-        @conoha.token = new ConoHa.AccessToken(token.id, token.expires) if cache
-  ###
+        conoha.token = new AccessToken(token.id, token.expires)
+        callback(err, token)
