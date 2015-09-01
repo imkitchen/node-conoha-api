@@ -1,3 +1,4 @@
+require('dotenv').load()
 expect = require('chai').expect
 ConoHa = require '../src/conoha'
 
@@ -31,9 +32,16 @@ describe 'ConoHa class', ->
 
   describe 'getService() method returns non undefined', ->
     [
-      'identity',
       'account',
-      'databasehosting'
+      'compute',
+      'blockstorage',
+      'databasehosting',
+      'image',
+      'dns',
+      'objectstorage',
+      'mailhosting',
+      'identity',
+      'network'
     ]
     .forEach (service) ->
       it "#{service} service", ->
