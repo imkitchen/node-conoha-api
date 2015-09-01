@@ -1,1 +1,1 @@
-module.exports = require('release/conoha');
+module.exports = require('./release/conoha');
