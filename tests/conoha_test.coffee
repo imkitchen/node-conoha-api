@@ -29,6 +29,9 @@ describe 'ConoHa class', ->
       expect(conoha.auth.auth.tenantId)
       .to.not.be.undefined
 
+    it 'identity service endpoint', ->
+      expect(process.env.CONOHA_IDENTITY_URL)
+      .to.not.be.undefined
 
   describe 'getService() method returns non undefined', ->
     [
