@@ -7,10 +7,5 @@ module.exports = class ConoHa
     @request  = require 'request'
     @services = {}
 
-  class AccessToken
-    constructor: (@id, @expires) ->
-    isExpired: ->
-      true || false
-
   getService: (serviceName) ->
     @services[serviceName] ||= new ServiceClass[serviceName]?(@)
