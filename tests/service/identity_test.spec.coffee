@@ -37,6 +37,7 @@ describe 'IdentityService class', ->
         s.postTokens (err, token) ->
           expect(err).equals null
           expect(token).to.not.be.undefined
-          expect(token).to.have.property 'id', 'expires'
+          expect(token).to.have.property 'id'
+          expect(token).to.have.property 'expires'
           nockdone()
           done()
