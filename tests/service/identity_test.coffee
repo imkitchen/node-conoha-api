@@ -19,12 +19,15 @@ describe 'IdentityService class', ->
 
   describe 'request', ->
     it 'GET /', (done) ->
-      s.getVersions (versions) ->
+      s.getVersionList (err, versions) ->
+        expect(err).equals null
         expect(versions).to.have.property 'values'
         done()
 
-    #it 'GET /v2.0', (done) ->
-    #  s.getVersionDetail (detail) ->
+    it 'GET /v2.0', (done) ->
+      s.getVersionDetail (err, version) ->
+        expect(err).equals null
+        expect(version).to.have.property 'status'
+        done()
         
-
     it 'POST /v2.0/tokens'
