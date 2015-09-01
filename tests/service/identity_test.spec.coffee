@@ -1,5 +1,3 @@
-require('dotenv').load();
-expect = require('chai').expect
 ConoHa = require('../../src/conoha')
 
 describe 'IdentityService class', ->
@@ -19,15 +17,25 @@ describe 'IdentityService class', ->
 
   describe 'request', ->
     it 'GET /', (done) ->
-      s.getVersionList (err, versions) ->
-        expect(err).equals null
-        expect(versions).to.have.property 'values'
-        done()
+      nockback 'get_version_list.json', (nockdone) ->
+        s.getVersionList (err, versions) ->
+          expect(err).equals null
+          expect(versions).to.have.property 'values'
+          nockdone()
+          done()
 
     it 'GET /v2.0', (done) ->
-      s.getVersionDetail (err, version) ->
-        expect(err).equals null
-        expect(version).to.have.property 'status'
-        done()
+      nockback 'get_version_detail.json', (nockdone) ->
+        s.getVersionDetail (err, version) ->
+          expect(err).equals null
+          expect(version).to.have.property 'status'
+          nockdone()
+          done()
         
-    it 'POST /v2.0/tokens'
+    it 'POST /v2.0/tokens'#, (done) ->
+    ###
+      nockback 'post_tokens.json', (nockdone) ->
+        s.postTokens false, (err, token) ->
+          expect(err).equals null
+          expect(token)
+    ###
