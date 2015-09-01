@@ -1,0 +1,31 @@
+[
+    {
+        "scope": "https://account.tyo1.conoha.io:443",
+        "method": "GET",
+        "path": "/",
+        "body": "",
+        "status": 300,
+        "response": {
+            "versions": [
+                {
+                    "status": "CURRENT",
+                    "updated": "2015-05-12T09:00:00Z",
+                    "id": "v1.0",
+                    "links": [
+                        {
+                            "href": "https://account.tyo1.conoha.io/v1/",
+                            "rel": "self"
+                        }
+                    ]
+                }
+            ]
+        },
+        "headers": {
+            "server": "openresty/1.7.10.1",
+            "date": "Tue, 01 Sep 2015 18:36:40 GMT",
+            "content-type": "application/json",
+            "content-length": "156",
+            "connection": "keep-alive"
+        }
+    }
+]
