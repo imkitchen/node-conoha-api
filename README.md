@@ -7,7 +7,7 @@ ConoHa API client library
 
 ## Installation
 
-`npm install conoha-api --save`
+`npm install conoha --save`
 
 ## Services
 
