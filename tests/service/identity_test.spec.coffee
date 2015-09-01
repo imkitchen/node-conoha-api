@@ -33,7 +33,7 @@ describe 'IdentityService class', ->
           done()
         
     it 'POST /v2.0/tokens', (done) ->
-      nockback 'identity_post_tokens.json', (nockdone) ->
+      nockback 'identity_post_tokens.json', {before: beforeFilter}, (nockdone) ->
         s.postTokens (err, token) ->
           expect(err).equals null
           expect(token).to.not.be.undefined
