@@ -1,10 +1,10 @@
 module.exports = class ConoHa
-  request      = require 'request'
   ServiceClass = require './service'  
 
   # identityService: URL of IdentityService
   # auth: Object contains authenticate information
   constructor: (@identityServiceEndpoint, @auth) ->
+    @request  = require 'request'
     @services = {}
 
   class AccessToken
