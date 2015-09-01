@@ -9,6 +9,19 @@ ConoHa API client library
 
 `npm install conoha-api --save`
 
+## Services
+
+- Identity Service
+- Account Service (Not Implemented)
+- Compute Service (Not Implemented)
+- Block Storage Service (Not Implemented)
+- Image Service (Not Implemented)
+- Network Service (Not Implemented)
+- Object Storage Service (Not Implemented)
+- Database Hosting Service (Not Implemented)
+- DNS Service (Not Implemented)
+- Mail Hosting Service (Not Implemented)
+
 ## License
 The MIT License (MIT)
 
