@@ -17,7 +17,7 @@ describe 'IdentityService class', ->
 
   describe 'request', ->
     it 'GET /', (done) ->
-      nockback 'get_version_list.json', (nockdone) ->
+      nockback 'identity_get_version_list.json', (nockdone) ->
         s.getVersionList (err, versions) ->
           expect(err).equals null
           expect(versions).to.have.property 'values'
@@ -25,17 +25,18 @@ describe 'IdentityService class', ->
           done()
 
     it 'GET /v2.0', (done) ->
-      nockback 'get_version_detail.json', (nockdone) ->
+      nockback 'identity_get_version_detail.json', (nockdone) ->
         s.getVersionDetail (err, version) ->
           expect(err).equals null
           expect(version).to.have.property 'status'
           nockdone()
           done()
         
-    it 'POST /v2.0/tokens'#, (done) ->
-    ###
-      nockback 'post_tokens.json', (nockdone) ->
-        s.postTokens false, (err, token) ->
+    it 'POST /v2.0/tokens', (done) ->
+      nockback 'identity_post_tokens.json', (nockdone) ->
+        s.postTokens (err, token) ->
           expect(err).equals null
-          expect(token)
-    ###
+          expect(token).to.not.be.undefined
+          expect(token).to.have.property 'id', 'expires'
+          nockdone()
+          done()
