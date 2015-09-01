@@ -1,5 +1,3 @@
-require('dotenv').load()
-expect = require('chai').expect
 ConoHa = require '../src/conoha'
 
 describe 'ConoHa class', ->
