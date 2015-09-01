@@ -1,5 +1,5 @@
 {
-  "name": "conoha-api",
+  "name": "conoha",
   "version": "0.0.0",
   "description": "ConoHa API client for node.js",
   "main": "index.js",
