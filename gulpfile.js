@@ -19,8 +19,13 @@ gulp.task('watch', function() {
 
 // run tests
 gulp.task('test', function() {
-  gulp.src('./tests/**/*.coffee')
-  .pipe(mocha())
+  gulp.src('./tests/**/*.spec.coffee')
+  .pipe(mocha({ require: ['./tests/helpers/chai', './tests/helpers/nock'] }));
+});
+
+// runt tests with watch mode
+gulp.task('watch-test', function() {
+  gulp.watch(['./src/**/*.coffee', './tests/**/*.spec.coffee'], ['test']);
 });
 
 // test and compile
