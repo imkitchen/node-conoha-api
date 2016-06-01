@@ -9,7 +9,7 @@ require('coffee-script/register');
 gulp.task('coffee', function() {
   gulp.src('./src/**/*.coffee')
   .pipe(coffee())
-  .pipe(gulp.dest('./release'));
+  .pipe(gulp.dest('./lib'));
 });
 
 // watch file change
