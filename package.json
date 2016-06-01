@@ -10,11 +10,11 @@
     "API",
     "ConoHa"
   ],
-  "author": "imkitchen",
+  "author": "nukosuke",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:imkitchen/node-conoha-api.git"
+    "url": "git@github.com:nukosuke/node-conoha.git"
   },
   "dependencies": {
     "request": "^2.61.0"

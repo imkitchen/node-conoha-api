@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/imkitchen/node-conoha-api.svg?branch=release)](https://travis-ci.org/imkitchen/node-conoha-api)
+[![Build Status](https://travis-ci.org/nukosuke/node-conoha.svg?branch=release)](https://travis-ci.org/nukosuke/node-conoha)
 [![npm version](https://badge.fury.io/js/conoha.svg)](http://badge.fury.io/js/conoha)
 
 # node-conoha-api
@@ -26,7 +26,7 @@ ConoHa API client library
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Yosuke Tamura
+Copyright (c) 2016 nukosuke
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -45,4 +45,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
