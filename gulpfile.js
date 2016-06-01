@@ -29,4 +29,4 @@ gulp.task('watch-test', function() {
 });
 
 // test and compile
-gulp.task('default', ['test', 'coffee']);
+gulp.task('default', ['coffee', 'test']);
